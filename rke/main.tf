@@ -12,21 +12,21 @@ provider "rke" {}
 
 resource "rke_cluster" "cluster" {
   nodes {
-    address          = "3.90.214.89"
+    address          = "54.82.35.8"
     user             = "ubuntu"
     role             = ["controlplane", "etcd"]
     ssh_key_path     = "~/.ssh/id_rsa"
   }
 
     nodes {
-    address          = "52.207.242.9"
+    address          = "54.90.88.205"
     user             = "ubuntu"
     role             = ["worker"]
     ssh_key_path     = "~/.ssh/id_rsa"
   }
 
     nodes {
-    address          = "107.21.87.223"
+    address          = "54.173.1.176"
     user             = "ubuntu"
     role             = ["worker"]
     ssh_key_path     = "~/.ssh/id_rsa"
